@@ -21,7 +21,7 @@ def calculate_network_info(ip_address):
         ip_class = 'A'
         subnet_mask = '255.0.0.0'
         network_address = f'{octets[0]}.0.0.0'
-        host_address = f'0.0.0.{octets[3]}'
+        host_address = f'0.{octets[1]}.{octets[2]}.{octets[3]}'
         broadcast_address = f'{octets[0]}.255.255.255'
     elif 128 <= first_octet <= 191:
         ip_class = 'B'
